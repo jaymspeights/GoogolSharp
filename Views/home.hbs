@@ -1,0 +1,36 @@
+<div class="left">
+  <ul>
+    <li>
+      <div class="new_group">
+        <button id="new_group_btn" type="button" name="button">New Group</button>
+      </div>
+    </li>
+    {{#each group}}
+      <li>
+        <div class="group">
+          <div class="group_name">
+            <p>group.name</p>
+          </div>
+          <div class="last_message">
+            <p>group.last_message</p>
+          </div>
+        </div>
+      </li>
+    {{/each}}
+  </ul>
+</div>
+<div class="right">
+  {{#if chat}}
+    <div class="chat_bar">
+      <div class="chat_back">
+        <button id="chat_back_btn" type="button" name="button">Back</button>
+      </div>
+      <div class="chat_title">
+        {{chat.title}}
+      </div>
+      <div class="chat_settings">
+        <button id="chat_settings_btn" type="button" name="button">Settings</button>
+      </div>
+    </div>
+  {{/if}}
+</div>
